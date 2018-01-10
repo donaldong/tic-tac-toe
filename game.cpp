@@ -3,8 +3,6 @@
 using namespace std;
 using namespace TicTacToe;
 
-#include <iostream>
-
 int at(int r, int c) {
     return r * 3 + c;
 }
@@ -27,7 +25,7 @@ char Game::check() {
         {1, 4, 7},  // column 2
         {2, 5, 8},  // column 3
         {0, 4, 8},  // diagonal 1
-        {2, 4, 7}   // diagonal 2
+        {2, 4, 6}   // diagonal 2
     };
     for (int i = 0; i < pos.size(); ++i) {
         if (__board[pos[i][0]] == __board[pos[i][1]] && 

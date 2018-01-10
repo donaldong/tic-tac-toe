@@ -36,6 +36,7 @@ int main() {
         }
         cout << endl;
     }
+    display_board(game.get_board());
     if (game.win(P1)) printf(">>>  %c Wins The Game!!  <<<", P1);
     else if (game.win(P2))  printf(">>  %c Wins The Game!!  <<<", P2);
     else printf(">>>  Tie  <<<");
